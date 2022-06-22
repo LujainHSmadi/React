@@ -1,0 +1,16 @@
+p{
+    color: blue;
+    font-size: xx-large;
+}
+div #st{
+border: 1px solid;
+}
+
+table{
+        width: 100%;
+}
+table tr{
+    border: 1px solid rgba(160, 147, 147, 0.597);
+    width: 100%;
+    margin: 0%;
+}
