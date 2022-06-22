@@ -1,18 +1,15 @@
 import React from 'react';
-import Sorting from './components/Sorting';
-import Mapping from './components/Mapping';
-import Filtering from './components/Filtering';
-
+import './components/style.css';
+import SearchBar from './components/SearchBar';
 function App() {
   var data = ["Lujain ", "Amal ", "Omar ", "Haya ", "Layan ", "Mohammad", "Khozama"];
 
   return (
     <div >
-      <Sorting />
-      <Mapping />
-      <Filtering />
-
      
+      <SearchBar placeholder="Enter a name" data={data} />
+
+
     </div>
   );
 }
