@@ -1,9 +1,11 @@
-import StateHooks from "./StateHooks";
+
+import FitchData from './FitchData'
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <StateHooks/>
+      <FitchData/>
     </div>
   );
 }
