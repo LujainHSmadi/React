@@ -1,0 +1,22 @@
+.movie__details {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+
+    grid-gap: 1rem;
+
+}
+
+.movie__item {
+
+    border: 2px solid #e7e7e7;
+    width: 20vw;
+    border-radius: 4px;
+
+    padding: .9rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}

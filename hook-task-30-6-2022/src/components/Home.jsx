@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Banner from './Banner';
+import MovieList from './MovieList';
 import './home.css';
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
 
 
             {/* Rows */}
-
+            <MovieList/>
 
         </div>
     )
