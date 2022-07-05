@@ -21,10 +21,13 @@ function MovieList() {
     return (
         <>
             {loading && <h3>loading..</h3>}
+            <div className="movie__details">
             {
+
+               
                 movies.map((movie) => (
 
-                    <div className="movie__details" key={movie.id}>
+                    <div  key={movie.id}>
                         <Link to={`${movie.id}`} >
                             <div className="movie__item">
                                 <img
@@ -40,9 +43,11 @@ function MovieList() {
 
 
 
-                ))
+                    )
+                    
+                    )
             }
-
+            </div>
         </>
     );
 }

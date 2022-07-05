@@ -1,11 +1,11 @@
 import Home from './components/Home';
 import { ThemeContext } from './components/ThemeContext';
 import React from 'react';
+import Theme from './components/Theme';
 
 class App extends React.Component {
   state = {
     color: 'blue',
-    size: '20'
 
   }
 
@@ -14,12 +14,12 @@ class App extends React.Component {
   }
 
   render() {
-
+let x ='lujain'
 
     return (
-      <ThemeContext.Provider value={{ state: this.state, changeColorHandler: this.changeColorHandler }}>
+      <ThemeContext.Provider value={{ state: this.state, changeColorHandler: this.changeColorHandler,x }}>
 
-        <Home />
+        <Theme />
       </ThemeContext.Provider>
     );
   }

@@ -1,17 +1,17 @@
 import React from "react";
 import { ThemeContext } from "./ThemeContext";
 class Theme extends React.Component {
-    state = { inputColor: '' }
+    state = { inputColor: 'red' }
 
 
     render() {
         return (
             <ThemeContext.Consumer>
                 {
-                    ({ state, changeColorHandler }) => (
+                    ({ state, changeColorHandler,x }) => (
                         <div style={{ backgroundColor: state.color }}>
-                            <h1 >Hello from the Theme</h1>
-                            <input value={this.state.inputColor} onChange={(e) => {
+                            <h1 >Hello from the Theme {x}</h1>
+                            <input  onChange={(e) => {
                                 this.setState({ inputColor: e.target.value })
                             }} />
                             <input type="button" value={'Change'} onClick={() => changeColorHandler(this.state.inputColor)} />

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,500&display=swap');
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 3px 1px 10px 10px #88888836;
+
+}
+
+.nav__content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav__content li {
+    font-family: 'Finlandica', sans-serif;
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.nav-logo {
+    width: 60px;
+}
